@@ -1,10 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const cn = (...classes: string[]) => {
-  return classes.filter(Boolean).join(" ");
-};
-
 export default function Gallery() {
   return (
     <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -26,12 +22,11 @@ const BlurImage = () => {
           src={"https://bit.ly/placeholder-img"}
           layout="fill"
           objectFit="cover"
-          className={cn(
-            "group-hover:opacity-75 duration-700 ease-in-out",
+          className={`group-hover:opacity-75 duration-700 ease-in-out ${
             isLoading
               ? "grayscale blur-2xl scale-110"
               : "grayscale-0 blur-0 scale-100"
-          )}
+          }`}
           onLoadingComplete={() => setLoading(false)}
         />
       </div>
