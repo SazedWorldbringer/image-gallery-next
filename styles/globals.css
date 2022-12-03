@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  body {
+    @apply bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-indigo-200 via-red-300 to-blue-400 bg-400 animate-gradient 
+  }
+}
+/* bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-violet-700 via-red-600 to-cyan-800 */
+/* bg-[radial-gradient(eclipse_at_bottom_left,_var(--tw-gradient-stops))] from-lime-600 via-violet-400 to-violet-300 */
+/* bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-lime-200 via-indigo-500 to-neutral-500 */
+/* bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-violet-500 via-blue-700 to-yellow-100 */
+/* bg-gradient-to-br from-indigo-600 via-rose-700 to-blue-100 */
+/* bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-stone-100 via-sky-100 to-pink-500 */
+/* bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-lime-200 via-sky-100 to-pink-300 */
+/* bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-indigo-200 via-red-300 to-blue-400 */
