@@ -1,4 +1,4 @@
-import { createClient } from "@supabase/supabase-js";
+/* import { createClient } from "@supabase/supabase-js";
 import Layout from "../layout";
 import { useState } from 'react'
 import Image from "next/image";
@@ -26,21 +26,21 @@ export default function Page({ images }: { images: Image[] }) {
 export async function getStaticPaths() {
   /* const ids = await supabaseAdmin.from("images").select('id').order('id') */
 
-  return {
-    paths: [
-      { params: { id: '1' } },
-      { params: { id: '2' } },
-      { params: { id: '3' } },
-      { params: { id: '4' } },
-      { params: { id: '5' } },
-      { params: { id: '6' } },
-      { params: { id: '7' } },
-      { params: { id: '8' } },
-      { params: { id: '9' } },
-      { params: { id: '10' } },
-    ],
-    fallback: false,
-  }
+return {
+  paths: [
+    { params: { id: '1' } },
+    { params: { id: '2' } },
+    { params: { id: '3' } },
+    { params: { id: '4' } },
+    { params: { id: '5' } },
+    { params: { id: '6' } },
+    { params: { id: '7' } },
+    { params: { id: '8' } },
+    { params: { id: '9' } },
+    { params: { id: '10' } },
+  ],
+  fallback: false,
+}
 }
 
 export const getStaticProps = async () => {
@@ -52,3 +52,4 @@ export const getStaticProps = async () => {
     },
   };
 };
+* /
