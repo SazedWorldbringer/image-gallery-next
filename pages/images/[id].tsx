@@ -24,7 +24,7 @@ export default function Page({ images }: { images: Image[] }) {
 }
 
 export async function getStaticPaths() {
-  /* const ids = await supabaseAdmin.from("images").select('id').order('id') */
+   const ids = await supabaseAdmin.from("images").select('id').order('id') 
 
 return {
   paths: [
@@ -52,4 +52,4 @@ export const getStaticProps = async () => {
     },
   };
 };
-* /
+*/
