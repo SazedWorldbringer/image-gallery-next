@@ -4,7 +4,7 @@ import Layout from './layout'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
+    <Layout title="Next Image Gallery">
       <Component {...pageProps} />
     </Layout>
   )
